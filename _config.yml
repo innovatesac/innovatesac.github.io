@@ -6,32 +6,31 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: United States Digital Service
+title: Mayor's Office for Innovation & Entrepreneurship
 email: no-reply@usds.gov
 description: >
-  The United States Digital Service is transforming how the federal government
-  works for the American people. And we need you.
-url: "https://www.usds.gov" # the base hostname & protocol for your site
-twitter_username: usds
-github_username:  usds
-medium_url: https://medium.com/@USDigitalService
-repository: usds/website
+  The Mayor's Office for Innovation & Entrepreneurship is expanding the startup pipeline, engaging the innovation ecosystem, and making City Hall open for business.
+url: "https://innovatesac.org" # the base hostname & protocol for your site
+twitter_username: innovatesac
+github_username:  innovatesac
+medium_url:
+repository: innovatesac/innovatesac.org
 
 # Build settings
 markdown: kramdown
 
 collections:
-  blog_summaries:
-  project_summaries:
-  reports_to_congress:
-    output: true
+  # blog_summaries:
+  program_summaries:
+  # reports_to_congress:
+  #   output: true
 
-defaults:
-  - scope:
-      path: ""
-      type: reports_to_congress
-    values:
-      layout: report-to-congress
+# defaults:
+#   - scope:
+#       path: ""
+#       type: reports_to_congress
+#     values:
+#       layout: report-to-congress
 
 gems:
   - jekyll-seo-tag
@@ -41,5 +40,5 @@ gems:
 # Jekyll SEO Tag
 # See https://github.com/jekyll/jekyll-seo-tag
 twitter:
-  username: usds
-logo: /img/usds-logo-onwhite.png
+  username: innovatesac
+logo: /img/mofie/favicon.png

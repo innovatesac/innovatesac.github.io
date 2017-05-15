@@ -149,13 +149,13 @@ body {
 
         }
         .nav-centerpiece {
-          width: 250px;
+          width: 300px;
           z-index: 15;
           a#logo-desktop-full {
             img {
-              width: 139px;
-              height: 80px;
-              top: 15px;
+              width: 300px;
+              height: auto;
+              top: 20px;
               position: relative;
             }
           }
@@ -217,9 +217,9 @@ body {
               a#logo-desktop-collapsed {
                 @include opacity(1.00);
                 @include css3-prefix('transition', 'opacity 200ms linear');
-                bottom: -22px;
+                bottom: -5px;
                 img {
-                  width: 100px;
+                  width: 250px;
                   bottom: 0;
                 }
               }
@@ -323,6 +323,9 @@ body {
       .site-navbar .desktop {
         display: none;
       }
+      .mobile img {
+        max-width: 60%;
+      }
     }
     @media (min-width: $screen-sm-min) {
       .site-navbar .mobile {
@@ -389,14 +392,21 @@ body {
 
     .jumbotron {
       width: 100%;
-      height: 643px;
-      background: url('../img/home/jumbotron-usds-staff-1200.jpg') center center no-repeat;
+      height: 400px; // 643px
+      // background: url('../img/home/jumbotron-usds-staff-1200.jpg') center center no-repeat;
+      background: url('/img/mofie/sutters-fort.jpg') center center no-repeat;
       background-size: cover;
+      // @media (max-width: $screen-xs-max) {
+      //   background-image: url('../img/home/jumbotron-usds-staff-600.jpg')
+      // }
+      // @media (min-width: $screen-md-min) {
+      //   background-image: url('../img/home/jumbotron-usds-staff-2400.jpg')
+      // }
       @media (max-width: $screen-xs-max) {
-        background-image: url('../img/home/jumbotron-usds-staff-600.jpg')
+        background-image: url('/img/mofie/sutters-fort.jpg')
       }
       @media (min-width: $screen-md-min) {
-        background-image: url('../img/home/jumbotron-usds-staff-2400.jpg')
+        background-image: url('/img/mofie/sutters-fort.jpg')
       }
       color: #fff;
       position: relative;
@@ -421,7 +431,7 @@ body {
         bottom: 0;
         margin: 0 auto;
         padding-bottom: 2em;
-        @include radial-gradient(rgba(0,0,0,0.75) 40%, rgba(0,0,0,0) 70%);
+        @include radial-gradient(rgba(233,199,145,0.75) 40%, rgba(233,199,145,0) 70%);
         .play-button img {
           height: 16px;
           width: 23px;
@@ -448,6 +458,10 @@ body {
           text-decoration: none;
         }
       }
+    }
+
+    .text-shadow {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
     }
 
     .ted-teaser div {
@@ -525,7 +539,7 @@ body {
     .story {
       margin-top: 5rem;
       img {
-        max-height: 170px;
+        max-height: none; // 170px;
         border-top: 6px solid $background-color-secondary;
         padding-top: 8px;
       }
@@ -711,7 +725,7 @@ body {
     width: 100%;
   }
   .feature-panel {
-    background-color: #103052;
+    background-color: #2a3b66;
     color: #fff;
     padding-bottom: 60px;
     overflow: auto;
@@ -734,7 +748,7 @@ body {
     color: #000;
     font-size: 1.3em;
     &:hover {
-      background-color: #CAB41F;
+      background-color: #76afdf;
     }
   } // .join-button
 
@@ -751,7 +765,7 @@ body {
         margin: auto;
         img {
           width: 225px;
-          height: 39px;
+          height: auto; // 39px
         }
       }
     }
@@ -760,8 +774,8 @@ body {
       height: 120px;
     }
     .usds-logo {
-      width: 139px;
-      height: 80px;
+      width: 100%;
+      height: auto;
     }
     h4 {
       margin-top: 0;
