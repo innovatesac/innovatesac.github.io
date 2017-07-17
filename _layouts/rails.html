@@ -10,19 +10,20 @@
         <div class="usa-grid">
           <div class="usa-width-three-fourths">
           {% unless page.front %}
-            <p class="kicker">2016 Report to Congress</p>
+            <p class="kicker">{{ page.organization }}</p>
           {% endunless %}
             {{ content }}
+            {% include rails_data.html %}
             {% include prev_next.html position="bottom" %}
           </div>
           <div class="usa-width-one-fourth">
             <ul class="usa-unstyled-list usds-sidebar">
-            {% for section in site.reports_to_congress %}
-              <li class="{% if page.url == section.url %} active{% endif %}{% if section.sub %} sub{% endif %}">
-                <a href="{{ section.url }}">{% if section.short %}{{ section.short }}{% else %}{{ section.title }}{% endif %}</a>
+            {% for grantee in site.rails %}
+              <li class="{% if page.url == grantee.url %} active{% endif %}{% if section.sub %} sub{% endif %}">
+                <a href="{{ grantee.url }}">{% if grantee.organization %}{{ grantee.organization }}{% else %}{{ grantee.title }}{% endif %}</a>
               </li>
             {% endfor %}
-              <li class="pdf"><a href="/resources/USDS-2016-Report-to-Congress.pdf">Download the<br/>full report (PDF)</a></li>
+              <!-- <li class="pdf"><a href="/resources/USDS-2016-Report-to-Congress.pdf">Download the<br/>full report (PDF)</a></li> -->
           </div>
         </div>
       </section>

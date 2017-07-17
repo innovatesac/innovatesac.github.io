@@ -2,14 +2,14 @@
   {% if page.previous.url %}
       <div class="prev">
         <a href="{{ page.previous.url }}">&larr; Previous
-          <strong>{{ page.previous.title }}</strong>
+          <strong>{{ page.previous.organization }}</strong>
         </a>
       </div>
   {% endif %}
   {% if page.next.url %}
     <div class="next">
       <a href="{{ page.next.url }}">Next &rarr;
-        <strong>{{ page.next.title }}</strong>
+        <strong>{{ page.next.organization }}</strong>
       </a>
     </div>
   {% endif %}

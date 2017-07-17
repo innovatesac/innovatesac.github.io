@@ -7,7 +7,7 @@
 
 # Site settings
 title: Mayor's Office for Innovation & Entrepreneurship
-email: no-reply@usds.gov
+email: mofie@innovatesac.org
 description: >
   The Mayor's Office for Innovation & Entrepreneurship is expanding the startup pipeline, engaging the innovation ecosystem, and making City Hall open for business.
 url: "https://innovatesac.org" # the base hostname & protocol for your site
@@ -22,15 +22,15 @@ markdown: kramdown
 collections:
   # blog_summaries:
   program_summaries:
-  # reports_to_congress:
-  #   output: true
+  rails:
+    output: true
 
-# defaults:
-#   - scope:
-#       path: ""
-#       type: reports_to_congress
-#     values:
-#       layout: report-to-congress
+defaults:
+  - scope:
+      path: ""
+      type: rails
+    values:
+      layout: rails
 
 gems:
   - jekyll-seo-tag
