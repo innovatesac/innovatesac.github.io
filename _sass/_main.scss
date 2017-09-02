@@ -278,7 +278,7 @@ body {
       }
 
       .mobile-nav {
-        position: sticky; // use sticky instead of fixed for scrollability
+        position: fixed;
         top: $fixed-header-height-mobile;
         width: 100%;
         background-color: #ffffff;
