@@ -278,7 +278,7 @@ body {
       }
 
       .mobile-nav {
-        position: fixed;
+        position: sticky; // use sticky instead of fixed for scrollability
         top: $fixed-header-height-mobile;
         width: 100%;
         background-color: #ffffff;
@@ -286,7 +286,7 @@ body {
         border-bottom: 1px solid #f1f1f1;
         // see here why this is using max-height instead of height: (tl;dr: animation)
         // http://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css
-        max-height: 500px;
+        // max-height: 500px;
         overflow: hidden;
         @include css3-prefix('transition', 'max-height 250ms linear');
         ul, li {

@@ -1,6 +1,6 @@
 ---
 title: Demonstration Partnerships
-project_link: https://innovatesac.github.io/demonstration-partnerships/
+project_link: /demonstration-partnerships/
 link_text: Read the Policy
 image_url: https://images.unsplash.com/photo-1457364887197-9150188c107b?dpr=2&auto=format&fit=crop&w=400&h=200&q=80&cs=tinysrgb&crop=&bg=
 image_description:

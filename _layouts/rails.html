@@ -13,7 +13,9 @@
             <p class="kicker">{{ page.organization }}</p>
           {% endunless %}
             {{ content }}
-            {% include rails_data.html %}
+            {% unless page.front %}
+              {% include rails_data.html %}
+            {% endunless %}
             {% include prev_next.html position="bottom" %}
           </div>
           <div class="usa-width-one-fourth">

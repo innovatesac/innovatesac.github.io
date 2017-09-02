@@ -3,7 +3,7 @@
     <div class="usa-grid">
       <div class="usa-width-one-whole">
         <div id="beta-notice" class="hidden-xs">
-          This site is in beta and a <a href="http://agilemanifesto.org/" target="_blank">work in progress</a>
+          This site is in beta and a <a href="https://en.wikipedia.org/wiki/Minimum_viable_product" target="_blank">work in progress</a>
         </div>
         <!-- <img class="eop-seal" alt="An image of the presidential seal" src="/img/layout/seal.png" /> -->
         <span class="hidden-xs">An official website of the </span>City of Sacramento
@@ -14,21 +14,22 @@
   <nav class="site-navbar">
     <div class="desktop">
       <ul class="usa-unstyled-list">
-        <!-- <li class="nav-item {% if page.url == '/mission.html' or page.url == '/values.html'  or page.url == '/story.html' %}active{% endif %}">
-          <a href="/mission"><span>About</span></a>
+        <li class="nav-item {% if page.url == '/mission.html' or page.url == '/values.html'  or page.url == '/story.html' %}active{% endif %}">
+          <a href="/#"><span>About</span></a>
           <ul>
-            <li><a href="/mission">Our Mission</a></li>
-            <li><a href="/values">Our Values</a></li>
-            <li><a href="/story">Our Story</a></li>
+            <li><a href="/#">Mission</a></li>
+            <li><a href="/#">Team</a></li>
+            <li><a href="/#">Contact</a></li>
           </ul>
         </li>
         <li class="nav-item {% if page.url == '/work.html' or page.url contains '/report-to-congress' %}active{% endif %}">
-          <a href="/work"><span>Our work</span></a>
+          <a href="/#"><span>Programs</span></a>
           <ul>
-            <li><a href="/work">Portfolio</a></li>
-            <li><a href="/report-to-congress/2016/">2016 Report to Congress</a></li>
+            <li><a href="/rails">RAILS</a></li>
+            <li><a href="https://medium.com/innovatesac/we-received-nearly-500-creative-economy-applications-heres-what-we-ve-learned-so-far-71630c3c93c4" target="_blank">Creative Economy</a></li>
+            <li><a href="/demonstration-partnerships">Demonstration Partnerships</a></li>
           </ul>
-        </li> -->
+        </li>
         <li class="nav-centerpiece">
           <a id="logo-desktop-full" href="/">
             <img alt="The logo of the Mayor's Office for Innovation & Entrepreneurship" src="/img/mofie/logo-full.svg" />
@@ -37,12 +38,16 @@
             <img alt="The logo of the Mayor's Office for Innovation & Entrepreneurship" src="/img/mofie/logo-mini.svg" />
           </a>
         </li>
-        <!-- <li class="nav-item {% if page.url == '/blog.html' %}active{% endif %}">
-          <a href="/blog"><span>Blog</span></a>
-        </li>
         <li class="nav-item {% if page.url == '/join.html' %}active{% endif %}">
-          <a href="/join"><span>Join us</span></a>
-        </li> -->
+          <a href="/#"><span>R&D</span></a>
+          <ul>
+            <li><a href="https://sacatos.org/" target="_blank">Autonomous Vehicles</a></li>
+            <li><a href="https://github.com/innovatesac/cityhall" target="_blank">City Hall Hack Nights</a></li>
+          </ul>
+        </li>
+        <li class="nav-item {% if page.url == '/blog.html' %}active{% endif %}">
+          <a href="https://medium.com/innovatesac" target="_blank"><span>Blog</span></a>
+        </li>
       </ul>
       <div id="submenu-background">&nbsp;</div>
 
@@ -51,7 +56,7 @@
       <a href="/">
         <img alt="The logo of the Mayor's Office for Innovation & Entrepreneurship" src="/img/mofie/logo-mini.svg" />
       </a>
-      <!-- <button class="navbar-toggle collapsed">
+      <button class="navbar-toggle collapsed">
         <div class="navbar-text">Menu</div>
         <span class="sr-only">Toggle navigation</span>
         <span class="hamburger-patty"></span>
@@ -61,27 +66,32 @@
       <div class="mobile-nav collapsed">
         <ul class="usa-unstyled-list">
           <li class="nav-item">
-            <a href="/about">About</a>
+            <a href="/#"><span>About</span></a>
             <ul>
-              <li class="nav-item"><a href="/mission">Our Mission</a></li>
-              <li class="nav-item"><a href="/values">Our Values</a></li>
-              <li class="nav-item"><a href="/story">Our Story</a></li>
+              <li><a href="/#">Mission</a></li>
+              <li><a href="/#">Team</a></li>
+              <li><a href="/#">Contact</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/work">Our work</a>
+            <a href="/#"><span>Programs</span></a>
             <ul>
-              <li><a href="/work">Portfolio</a></li>
-              <li><a href="/report-to-congress/2016/">2016 Report to Congress</a></li>
+              <li><a href="/rails">RAILS</a></li>
+              <li><a href="https://medium.com/innovatesac/we-received-nearly-500-creative-economy-applications-heres-what-we-ve-learned-so-far-71630c3c93c4" target="_blank">Creative Economy</a></li>
+              <li><a href="/demonstration-partnerships">Demonstration Partnerships</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/blog">Blog</a>
+            <a href="/#"><span>R&D</span></a>
+            <ul>
+              <li><a href="https://sacatos.org/" target="_blank">Autonomous Vehicles</a></li>
+              <li><a href="https://github.com/innovatesac/cityhall" target="_blank">City Hall Hack Nights</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a href="/join">Join us</a>
+          <li class="nav-item {% if page.url == '/blog.html' %}active{% endif %}">
+            <a href="https://medium.com/innovatesac" target="_blank"><span>Blog</span></a>
           </li>
-      </div> -->
+      </div>
     </div>
   </nav>
 </header>
