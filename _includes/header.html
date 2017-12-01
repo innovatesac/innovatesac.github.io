@@ -14,21 +14,16 @@
   <nav class="site-navbar">
     <div class="desktop">
       <ul class="usa-unstyled-list">
-        <li class="nav-item {% if page.url == '/mission.html' or page.url == '/values.html'  or page.url == '/story.html' %}active{% endif %}">
-          <a href="/#"><span>About</span></a>
-          <ul>
-            <li><a href="/#">Mission</a></li>
-            <li><a href="/#">Team</a></li>
-            <li><a href="/#">Contact</a></li>
-          </ul>
-        </li>
         <li class="nav-item {% if page.url == '/work.html' or page.url contains '/report-to-congress' %}active{% endif %}">
           <a href="/#"><span>Programs</span></a>
           <ul>
-            <li><a href="/rails">RAILS</a></li>
+            <li><a href="https://rails.innovatesac.org" target="_blank">RAILS</a></li>
             <li><a href="https://medium.com/innovatesac/we-received-nearly-500-creative-economy-applications-heres-what-we-ve-learned-so-far-71630c3c93c4" target="_blank">Creative Economy</a></li>
             <li><a href="/demonstration-partnerships">Demonstration Partnerships</a></li>
           </ul>
+        </li>
+        <li class="nav-item {% if page.url == '/work.html' or page.url contains '/report-to-congress' %}active{% endif %}">
+          <a href="https://sutl.innovatesac.org"><span>SUTL</span></a>
         </li>
         <li class="nav-centerpiece">
           <a id="logo-desktop-full" href="/">
@@ -39,11 +34,7 @@
           </a>
         </li>
         <li class="nav-item {% if page.url == '/join.html' %}active{% endif %}">
-          <a href="/#"><span>R&D</span></a>
-          <ul>
-            <li><a href="https://sacatos.org/" target="_blank">Autonomous Vehicles</a></li>
-            <li><a href="https://github.com/innovatesac/cityhall" target="_blank">City Hall Hack Nights</a></li>
-          </ul>
+          <a href="https://sacatos.org/" target="_blank"><span>ATOS</span></a>
         </li>
         <li class="nav-item {% if page.url == '/blog.html' %}active{% endif %}">
           <a href="https://medium.com/innovatesac" target="_blank"><span>Blog</span></a>
@@ -66,27 +57,18 @@
       <div class="mobile-nav collapsed">
         <ul class="usa-unstyled-list">
           <li class="nav-item">
-            <a href="/#"><span>About</span></a>
-            <ul>
-              <li><a href="/#">Mission</a></li>
-              <li><a href="/#">Team</a></li>
-              <li><a href="/#">Contact</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
             <a href="/#"><span>Programs</span></a>
             <ul>
-              <li><a href="/rails">RAILS</a></li>
+              <li><a href="https://rails.innovatesac.org">RAILS</a></li>
               <li><a href="https://medium.com/innovatesac/we-received-nearly-500-creative-economy-applications-heres-what-we-ve-learned-so-far-71630c3c93c4" target="_blank">Creative Economy</a></li>
               <li><a href="/demonstration-partnerships">Demonstration Partnerships</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/#"><span>R&D</span></a>
-            <ul>
-              <li><a href="https://sacatos.org/" target="_blank">Autonomous Vehicles</a></li>
-              <li><a href="https://github.com/innovatesac/cityhall" target="_blank">City Hall Hack Nights</a></li>
-            </ul>
+            <a href="https://sutl.innovatesac.org" target="_blank"><span>SUTL</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://sacatos.org/" target="_blank"><span>ATOS</span></a>
           </li>
           <li class="nav-item {% if page.url == '/blog.html' %}active{% endif %}">
             <a href="https://medium.com/innovatesac" target="_blank"><span>Blog</span></a>
